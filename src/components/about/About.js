@@ -4,9 +4,9 @@ import './about.css';
 class About extends Component {
     render() {
         return (
-            <div>
+            <section id='about'>
                 About
-            </div>
+            </section>
         );
     }
 }
