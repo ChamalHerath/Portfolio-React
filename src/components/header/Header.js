@@ -11,7 +11,7 @@ class Header extends Component {
             <header className='container header_container'>
                 <div>
                     <h5>Hello I'm</h5>
-                    <h1>Chamal Janadara</h1>
+                    <h1>Chamal Janadara Herath</h1>
                     <h5 className='text-light'>Frontend Developer</h5>
 
                     <CTA/>

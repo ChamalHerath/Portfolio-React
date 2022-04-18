@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {AiOutlineLinkedin} from 'react-icons/ai';
 import {AiOutlineGithub} from 'react-icons/ai';
 import {AiOutlineFacebook} from 'react-icons/ai';
+import {SiGmail} from 'react-icons/si';
 
 import './header.css';
 
@@ -10,6 +11,7 @@ class SocialLinks extends Component {
         return (
             <div className='header-socials'>
                 <a href="https://www.linkedin.com/in/chamal-janadara-a96605197/" target='_blank'><AiOutlineLinkedin/></a>
+                <a href="mailto: chamaljanadara@gmail.com" target='_blank'><SiGmail/></a>
                 <a href="https://github.com/ChamalHerath" target='_blank'><AiOutlineGithub/></a>
                 <a href="https://www.facebook.com/chamal.janadara/" target='_blank'><AiOutlineFacebook/></a>
             </div>

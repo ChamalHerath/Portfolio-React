@@ -1,0 +1,109 @@
+#about {
+    margin-top: 64px;
+}
+
+.about_container {
+    margin-top: 32px;
+    display: grid;
+    grid-template-columns: 35% 50%;
+    gap: 15%;
+}
+
+.about_me {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    display: grid;
+    place-items: center;
+}
+
+.about_me-img {
+    border-radius: 10px;
+    overflow: hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about_me-img:hover {
+    transform: rotate(0);
+}
+
+.about_content p {
+    margin: 32px 0 40px;
+    color: var(--color-light);
+}
+
+.about_cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.about_card {
+    background: linear-gradient(45deg, transparent, var(--color-bg-varient), transparent);
+    border: 1px solid transparent;
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.about_card:hover {
+    background: transparent;
+    border-color: var(--color-primary-varient);
+    cursor: default;
+}
+
+.about_icon {
+    color: var(--color-primary);
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+
+.about_card h5 {
+    font-size: 15px;
+}
+
+.about_card small {
+    font-size: 12px;
+    color: var(--color-light);
+}
+
+/* ======== MEDIA QUERIES (Medium) ======== */
+@media screen and (max-width: 1024px){
+    .about_container {
+        grid-template-columns: 1fr;
+    }
+    .about_me {
+        width: 50%;
+        margin: 32px auto;
+    }
+    .about_content {
+        text-align: center;
+    }
+    .about_content p {
+        margin: 16px 0;
+    }
+}
+
+/* ======== MEDIA QUERIES (Small) ======== */
+@media screen and (max-width: 600px){
+    #about {
+        margin-top: 0;
+    }
+    .about_cards {
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+    .about_me {
+        width: 65%;
+        margin: 10px auto;
+    }
+    .about_content {
+        text-align: center;
+    }
+    .about_content p {
+        margin: 24px 0;
+    }
+}
