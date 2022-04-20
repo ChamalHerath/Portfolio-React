@@ -1,0 +1,28 @@
+/* ======== MEDIA QUERIES (Medium) ======== */
+@media screen and (max-width: 1024px){
+    .skills_container {
+        grid-template-columns: 1fr;
+    }
+    .skills_container > div {
+        margin: 0 auto;
+        padding-bottom: 32px;
+        width: 80%;
+    }
+    .skills_content {
+        padding: 16px;
+    }
+}
+
+/* ======== MEDIA QUERIES (Small) ======== */
+@media screen and (max-width: 600px){
+    #skills {
+        margin-top: 200px;
+    }
+    .skills_container {
+        gap: 16px;
+    }
+    .skills_container > div {
+        padding: 32px 16px;
+        width: 100%;
+    }
+}
