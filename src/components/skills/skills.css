@@ -30,6 +30,18 @@
     row-gap: 15px;
 }
 
+.other_skills .skills_content{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.other_skills .skills_icon {
+    color: var(--color-primary);
+    margin-top: 6px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
 .skills_details {
     display: flex;
     gap: 16px;
@@ -43,6 +55,9 @@
 
 /* ======== MEDIA QUERIES (Medium) ======== */
 @media screen and (max-width: 1024px){
+    #skills {
+        margin-top: 200px;
+    }
     .skills_container {
         grid-template-columns: 1fr;
     }

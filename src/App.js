@@ -20,8 +20,8 @@ class App extends Component {
                 <Nav/>
                 <About/>
                 <Skills/>
-                <Projects/>
                 <Education/>
+                <Projects/>
                 {/*<Testimonial/>*/}
                 <Contact/>
                 <Footer/>
