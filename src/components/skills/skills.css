@@ -24,7 +24,7 @@
     cursor: default;
 }
 
-.skills_content{
+.skills_content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 15px;

@@ -7,8 +7,7 @@ class Projects extends Component {
             <section id='projects'>
                 <h5>What Projects I Have</h5>
                 <h2>Personal Projects</h2>
-                <div className='container container_projects'>
-                    <div className='projects_container'>
+                <div className='container projects_container'>
                         <div className='projects_content'>
                             <article>
                                 <h3>School Management System</h3>
@@ -72,7 +71,6 @@ class Projects extends Component {
                             </article>
                         </div>
                     </div>
-                </div>
             </section>
         );
     }

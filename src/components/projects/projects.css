@@ -35,57 +35,39 @@
     cursor: default;
 }
 
-.projects_content{
+.projects_content {
     display: grid;
     grid-template-columns: 1fr;
 }
 
-.other_skills .skills_icon {
-    color: var(--color-primary);
-    margin-top: 6px;
-    margin-right: 10px;
-    font-size: 15px;
-}
-
-.skills_details {
-    display: flex;
-    gap: 16px;
-}
-
-.skills_icon {
-    color: var(--color-primary);
-    margin-top: 6px;
-    font-size: 25px;
-}
 
 /* ======== MEDIA QUERIES (Medium) ======== */
 @media screen and (max-width: 1024px){
-    #skills {
+    #projects {
         margin-top: 200px;
     }
-    .skills_container {
+    .projects_container {
         grid-template-columns: 1fr;
     }
-    .skills_container > div {
+    .projects_container > div {
         margin: 0 auto;
         padding-bottom: 32px;
-        width: 80%;
     }
-    .skills_content {
-        padding: 16px;
+    .projects_content {
+        padding: 10px;
     }
 }
 
 /* ======== MEDIA QUERIES (Small) ======== */
 @media screen and (max-width: 600px){
-    #skills {
+    #projects {
         margin-top: 200px;
     }
-    .skills_container {
-        gap: 16px;
-    }
-    .skills_container > div {
+    .projects_container > div {
         padding: 32px 16px;
         width: 100%;
+    }
+    .projects_container {
+        grid-template-columns: 1fr;
     }
 }
