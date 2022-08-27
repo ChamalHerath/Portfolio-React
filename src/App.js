@@ -22,7 +22,7 @@ class App extends Component {
                 <Skills/>
                 <Education/>
                 <Projects/>
-                {/*<Testimonial/>*/}
+                <Testimonial/>
                 <Contact/>
                 <Footer/>
             </>

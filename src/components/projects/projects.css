@@ -55,6 +55,7 @@
     }
     .projects_content {
         padding: 10px;
+        width: 80%;
     }
 }
 
@@ -69,5 +70,8 @@
     }
     .projects_container {
         grid-template-columns: 1fr;
+    }
+    .projects_content {
+        width: var(--container-width-sm);
     }
 }

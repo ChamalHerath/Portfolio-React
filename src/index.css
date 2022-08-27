@@ -44,7 +44,7 @@ body {
 /* ======== GENERAL STYLES ========= */
 .container {
     width: var(--container-width-lg);
-    margin: 0 auto;
+    margin: 40px auto;
 }
 
 h1, h2, h3, h4, h5 {
@@ -86,8 +86,8 @@ a:hover {
     width: max-content;
     display: inline-block;
     color: var(--color-primary);
-    padding: 5px 10px;
-    border-radius: 8px;
+    padding: 5px 20px;
+    border-radius: 4px;
     cursor: pointer;
     border: 1px solid var(--color-primary);
     transition: var(--transition);

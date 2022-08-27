@@ -1,6 +1,53 @@
 import React, {Component} from 'react';
 import './projects.css';
 
+const projectData = [
+    {
+        projectId: 1,
+        projectName: 'School Management System',
+        description: 'This is my 2nd year 2nd Semester project regarding OOP module.',
+        technologies: 'Java, MySQL'
+    },
+    {
+        projectId: 2,
+        projectName: 'Redesign a Website for Road Development Authority',
+        description: 'This is 3rd Year 2nd Semester project regarding HCI module.',
+        technologies: 'HTML, CSS, JAVA SCRIPT, BOOTSTRAP, FIREBASE'
+    },
+    {
+        projectId: 3,
+        projectName: 'Co-operative Insurance General Web site',
+        description: 'This is my first internship project.',
+        technologies: 'HTML, CSS, JAVA SCRIPT, REACTJS, MYSQL, GITLAB'
+    },
+    {
+        projectId: 4,
+        projectName: 'Co-operative Life Insurance Web Site',
+        description: 'This is my second internship project.',
+        technologies: 'HTML, CSS, JAVA SCRIPT, LARAVEL, MYSQL, GITHUB'
+    },
+    {
+        projectId: 5,
+        projectName: 'Peoples Building Construction Website',
+        description: 'Peoples Building Construction (Pvt) Ltd is a trusted leading construction company which ' +
+            'began as a small-scale company in 2006. They are currently the leading provider of construction ' +
+            'services in the Sri Lankan construction sector.',
+        technologies: 'HTML, CSS, JAVA SCRIPT, LARAVEL, GITHUB, VS-CODE'
+    },
+    {
+        projectId: 6,
+        projectName: 'Sampath Advertising Website',
+        description: 'SAMPATH ADVERTISING was incorporated in the year 2016 as both indoor and outdoor advertising company in Sri Lanka.',
+        technologies: 'HTML, CSS, JAVA SCRIPT, LARAVEL, GITHUB, VSCODE'
+    },
+    {
+        projectId: 7,
+        projectName: 'Me2Works Freelancer Website',
+        description: 'SAMPATH ADVERTISING was incorporated in the year 2016 as both indoor and outdoor advertising company in Sri Lanka.',
+        technologies: 'HTML, CSS, JAVA SCRIPT, LARAVEL, GITHUB, VSCODE'
+    },
+]
+
 class Projects extends Component {
     render() {
         return (
@@ -8,69 +55,20 @@ class Projects extends Component {
                 <h5>What Projects I Have</h5>
                 <h2>Personal Projects</h2>
                 <div className='container projects_container'>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>School Management System</h3>
-                                <small>This is my 2nd year 2nd Semester project regarding OOP module.</small>
-                                <p>Technologies:<b> Java, MySQL</b></p>
-                            </article>
-                        </div>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>Redesign a Website for Road Development Authority</h3>
-                                <small>This is 3rd Year 2nd Semester project regarding HCI module.</small>
-                                <p>Technologies:<b> HTML, CSS, JAVA SCRIPT, BOOTSTRAP, FIREBASE</b></p>
-                            </article>
-                        </div>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>Co-operative Insurance General Web site</h3>
-                                <small> This is my first internship project.</small>
-                                <p>Technologies:<b> HTML, CSS, JAVA SCRIPT, REACTJS, MYSQL, GITLAB</b></p>
-                            </article>
-                        </div>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>Co-operative Life Insurance Web Site</h3>
-                                <small> This is my second internship project.</small>
-                                <p>Technologies:<b> HTML, CSS, JAVA SCRIPT, LARAVEL, MYSQL, GITHUB</b></p>
-                            </article>
-                        </div>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>People's Building Construction Website</h3>
-                                <small>Peoples Building Construction (Pvt) Ltd is a trusted leading construction company
-                                    which began as a small-scale company in 2006.
-                                    They are currently the leading provider of construction services in the Sri
-                                    Lankan construction sector.</small>
-                                <p>Technologies:<b> HTML, CSS, JAVA SCRIPT, LARAVEL, GITHUB, VSCODE</b></p>
-                            </article>
-                        </div>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>Sampath Advertising Website</h3>
-                                <small>SAMPATH ADVERTISING was incorporated in the year 2016 as both
-                                    indoor and outdoor advertising company in Sri Lanka.</small>
-                                <p>Technologies:<b> HTML, CSS, JAVA SCRIPT, LARAVEL, GITHUB, VSCODE</b></p>
-                            </article>
-                        </div>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>Sampath Advertising Website</h3>
-                                <small>SAMPATH ADVERTISING was incorporated in the year 2016 as both
-                                    indoor and outdoor advertising company in Sri Lanka.</small>
-                                <p>Technologies:<b> HTML, CSS, JAVA SCRIPT, LARAVEL, GITHUB, VSCODE</b></p>
-                            </article>
-                        </div>
-                        <div className='projects_content'>
-                            <article>
-                                <h3>Sampath Advertising Website</h3>
-                                <small>SAMPATH ADVERTISING was incorporated in the year 2016 as both
-                                    indoor and outdoor advertising company in Sri Lanka.</small>
-                                <p>Technologies:<b> HTML, CSS, JAVA SCRIPT, LARAVEL, GITHUB, VSCODE</b></p>
-                            </article>
-                        </div>
-                    </div>
+                    {
+                        projectData.map(({projectId, projectName, description, technologies}) => {
+                            return (
+                                <div className='projects_content'>
+                                    <article key={projectId}>
+                                        <h3>{projectName}</h3>
+                                        <small>{description}</small>
+                                        <p>Technologies:<b> {technologies}</b></p>
+                                    </article>
+                                </div>
+                            )
+                        })
+                    }
+                </div>
             </section>
         );
     }

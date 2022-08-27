@@ -10,13 +10,13 @@ class Footer extends Component {
     render() {
         return (
             <footer className='footer'>
-                <a href="#" className='footer_logo'>CHAMAL</a>
+                <a href="#" className='footer_logo'>CHAMAL JANADARA</a>
                 <ul className='permalinks'>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div className='footer_social'>
@@ -26,7 +26,7 @@ class Footer extends Component {
                     <a href="https://www.facebook.com/chamal.janadara/" target='_blank'><AiOutlineFacebook/></a>
                 </div>
                 <div className='footer_copyright'>
-                    <small>&copy; Deveoloped by Chamal Janadara. All Right Reserved.</small>
+                    <small>&copy; Deveoloped by <span style={{color: 'var(--color-primary)'}}>Chamal Janadara</span>. All Right Reserved.</small>
                 </div>
             </footer>
         );
