@@ -58,7 +58,7 @@ class Projects extends Component {
                     {
                         projectData.map(({projectId, projectName, description, technologies}) => {
                             return (
-                                <div className='projects_content'>
+                                <div className='education_content'>
                                     <article key={projectId}>
                                         <h3>{projectName}</h3>
                                         <small>{description}</small>

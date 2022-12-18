@@ -20,10 +20,10 @@ class Footer extends Component {
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <div className='footer_social'>
-                    <a href="https://www.linkedin.com/in/chamal-janadara-a96605197/" target='_blank'><AiOutlineLinkedin/></a>
-                    <a href="https://twitter.com/ChamalHerath" target='_blank'><AiOutlineTwitter/></a>
-                    <a href="https://www.instagram.com/chamaljherath/" target='_blank'><AiOutlineInstagram/></a>
-                    <a href="https://www.facebook.com/chamal.janadara/" target='_blank'><AiOutlineFacebook/></a>
+                    <a href="https://www.linkedin.com/in/chamal-janadara-a96605197/" target='_blank' rel="noreferrer"><AiOutlineLinkedin/></a>
+                    <a href="https://twitter.com/ChamalHerath" target='_blank' rel="noreferrer"><AiOutlineTwitter/></a>
+                    <a href="https://www.instagram.com/chamaljherath/" target='_blank' rel="noreferrer"><AiOutlineInstagram/></a>
+                    <a href="https://www.facebook.com/chamal.janadara/" target='_blank' rel="noreferrer"><AiOutlineFacebook/></a>
                 </div>
                 <div className='footer_copyright'>
                     <small>&copy; Deveoloped by <span style={{color: 'var(--color-primary)'}}>Chamal Janadara</span>. All Right Reserved.</small>

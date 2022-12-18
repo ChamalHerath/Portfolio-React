@@ -1,4 +1,4 @@
-import React, {Component, useRef, useState} from 'react';
+import React, {Component} from 'react';
 import './testimonial.css';
 import AVTR1 from '../../assets/avatar1.jpg';
 import AVTR2 from '../../assets/avatar2.jpg';

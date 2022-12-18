@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import {BsPatchCheckFill} from 'react-icons/bs';
 import {FaLaravel} from 'react-icons/fa';
 import {DiHtml5} from 'react-icons/di';
 import {GrReactjs} from 'react-icons/gr';

@@ -10,10 +10,10 @@ class SocialLinks extends Component {
     render() {
         return (
             <div className='header-socials'>
-                <a href="https://www.linkedin.com/in/chamal-janadara-a96605197/" target='_blank'><AiOutlineLinkedin/></a>
-                <a href="mailto: chamaljanadara@gmail.com" target='_blank'><SiGmail/></a>
-                <a href="https://github.com/ChamalHerath" target='_blank'><AiOutlineGithub/></a>
-                <a href="https://www.facebook.com/chamal.janadara/" target='_blank'><AiOutlineFacebook/></a>
+                <a href="https://www.linkedin.com/in/chamal-janadara-a96605197/" target='_blank' rel="noreferrer"><AiOutlineLinkedin/></a>
+                <a href="mailto: chamaljanadara@gmail.com" target='_blank' rel="noreferrer"><SiGmail/></a>
+                <a href="https://github.com/ChamalHerath" target='_blank' rel="noreferrer"><AiOutlineGithub/></a>
+                <a href="https://www.facebook.com/chamal.janadara/" target='_blank' rel="noreferrer"><AiOutlineFacebook/></a>
             </div>
         );
     }
