@@ -63,6 +63,10 @@ header {
     padding: 80px 24px 24px 24px;
 }
 
+.me img {
+    height: 400px;
+    /*width: 350px;*/
+}
 
 /* ======== SCROLL DOWN ======== */
 .scroll-down {

@@ -8,6 +8,9 @@ import {DiCss3} from 'react-icons/di';
 import {SiMicrosoftazure} from 'react-icons/si';
 import {SiMongodb} from 'react-icons/si';
 import {GiCheckMark} from 'react-icons/gi';
+import {SiNextdotjs} from 'react-icons/si';
+import {GrHeroku} from 'react-icons/gr';
+
 
 import './skills.css';
 
@@ -50,6 +53,13 @@ class Skills extends Component {
                                 </div>
                             </article>
                             <article className='skills_details'>
+                                <SiNextdotjs className='skills_icon'/>
+                                <div>
+                                    <h4>Next JS</h4>
+                                    <small className='text-light'>Experienced</small>
+                                </div>
+                            </article>
+                            <article className='skills_details'>
                                 <SiJavascript className='skills_icon'/>
                                 <div>
                                     <h4>Java Script</h4>
@@ -74,6 +84,13 @@ class Skills extends Component {
                                 <SiMicrosoftazure className='skills_icon'/>
                                 <div>
                                     <h4>Azure</h4>
+                                    <small className='text-light'>Experienced</small>
+                                </div>
+                            </article>
+                            <article className='skills_details'>
+                                <GrHeroku className='skills_icon'/>
+                                <div>
+                                    <h4>Heroku</h4>
                                     <small className='text-light'>Experienced</small>
                                 </div>
                             </article>
